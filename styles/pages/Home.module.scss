@@ -1,0 +1,43 @@
+.skipButton{
+  position: absolute;
+  right:10%;
+  top: 40%;
+  width:fit-content;
+}
+
+
+.homeContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: 1em;
+  position: relative;
+
+  
+  .myInfoContainer {
+    display: flex;
+    flex-direction: column;
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+  }
+}
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+    .myInfoContainer {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .homeContainer {
+    margin-top: 2em; // a lil cheessy
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+  text-align: center;
+  color: black;
+  .feedbackForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    border: 5px solid black;
+
+    input {
+      border-radius: 20px;
+      
+    }
+    .required::after {
+      content: '*';
+      color: red;
+    }
+    
+    
+
+    .submitButton { //using input instead of default button element
+      background-color: teal;
+
+      &:hover {
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    textarea {
+      min-width: 14em;
+      max-width: 20em;
+      min-height: 8em;
+      max-height: 10em;
+    }
+  }
+}
+
+.apiResponse {
+  padding: 0.5em 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    .feedbackForm {
+      textarea {
+        min-width: 12em;
+        max-width: 12em;
+      }
+    }
+  }
+}

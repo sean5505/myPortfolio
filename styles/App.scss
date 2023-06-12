@@ -1,0 +1,88 @@
+@import "../styles/colors.scss";
+
+* {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+body {
+  position: relative;
+  background-image: $clr-bg;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: $clr-main;
+  padding: 1em;
+  margin: 0;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+
+}
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+button {
+  background-color: teal;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: .5rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $clr-main;
+    background-color: blue;
+    transition: ease-in 0.3s;
+  }
+}
+
+p {
+  font-size: 1.2rem;
+  text-indent: 1em;
+
+}
+
+a {
+  color: $clr-sec;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+h2{
+  color:$clr-sec;
+}
+
+
+strong {
+  background: linear-gradient(45deg, #20002c, #1d2671);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4em;
+}
+
+::-webkit-scrollbar{
+  width: .6rem;
+
+}
+::-webkit-scrollbar:hover{
+  cursor: pointer;
+}
+::-webkit-scrollbar-track{
+  background-color: $clr-main;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  border-radius: 5px;
+}

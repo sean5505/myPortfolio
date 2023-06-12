@@ -1,0 +1,86 @@
+@import "@/styles/colors.scss";
+
+.projectContainer {
+  border: 2px solid $clr-sec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  max-width: 50em;
+  position: relative;
+
+  .backButton {
+    position: absolute;
+    top: 0;
+    left: 1em;
+  }
+
+  .title {
+    background: linear-gradient(45deg, #20002c, #1d2671);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+  }
+
+  .thumbnail {
+    max-width: 70%;
+    height: 100%;
+  }
+
+  .technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .technology {
+      padding: 0.2em 1em;
+      border: 1px solid $clr-sec;
+      border-bottom: none;
+      border-top: none;
+    }
+  }
+}
+.projectInfo {
+  width: 50vw;
+
+  h2 {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  a{
+    border: 2px dotted black;
+  }
+
+
+  code {
+    font-family: monospace;
+    background: black;
+    padding: .1em;
+    text-transform: capitalize;
+    border-radius: .2em;
+    font-size: 0.8em;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .projectInfo {
+    width: 90vw;
+  }
+}

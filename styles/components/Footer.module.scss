@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  height: 2em; /* height has to be declared for align items to work */
+  position: sticky;
+  bottom: 0;
+ 
+}
