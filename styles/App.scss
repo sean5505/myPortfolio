@@ -86,3 +86,11 @@ strong {
   background-color: grey;
   border-radius: 5px;
 }
+
+@media (max-width:400px) {
+  main{
+    min-height: 75vh;
+    max-height: 75vh;
+  }
+  
+}
