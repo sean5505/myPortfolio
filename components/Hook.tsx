@@ -11,9 +11,8 @@ type Props = {
 export default function Hook({ hookControl, isHookLoaded }: Props) {
   return (
     <>
-      <div>
+      <div className={style.hookContainer}>
         {!isHookLoaded ? (
-          <div className={style.hookContainer}>
             <Typewriter
               options={{
                 deleteSpeed: 1,
@@ -43,7 +42,6 @@ export default function Hook({ hookControl, isHookLoaded }: Props) {
                   .start();
               }}
             />
-          </div>
         ) : (
           <div className={style.loadedHook}>
             <motion.h4

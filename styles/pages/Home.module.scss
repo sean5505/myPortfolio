@@ -1,26 +1,19 @@
-
-
 .homeContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-inline: 1em;
-  position: relative;
 
-  > div {
-    .skipButton{
+  .initialHookContainer {
+    position: relative;
+    .skipButton {
       position: absolute;
-      right:0;
-      top:0;
-      width:fit-content;
-      z-index: 999;
+      right: 0;
+      top: 0;
     }
   }
 
-  
-  
-  
   .myInfoContainer {
     display: flex;
     flex-direction: column;
@@ -29,22 +22,20 @@
       display: flex;
       flex-direction: column;
       gap: 0.5em;
+    }
   }
-}
 }
 
 @media (min-width: 768px) {
   .homeContainer {
-    > div {
-      .skipButton{
-        left: 40%;
-      
+    .initialHookContainer {
+      .skipButton {
+        
       }
     }
     .myInfoContainer {
       flex-direction: row;
       align-items: center;
-    
+    }
   }
-}
 }

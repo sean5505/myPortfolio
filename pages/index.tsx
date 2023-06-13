@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
 
       <section className={style.homeContainer}>
-        <div>
+        <div className={style.initialHookContainer}>
           <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
           {!isHookLoaded && (
             <button className={style.skipButton} onClick={() => hookControl()}>
