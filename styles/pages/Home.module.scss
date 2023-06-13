@@ -4,14 +4,14 @@
   flex-direction: column;
   justify-content: center;
   margin-inline: 1em;
+  .skipButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   .initialHookContainer {
     position: relative;
-    .skipButton {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
   }
 
   .myInfoContainer {
@@ -28,7 +28,6 @@
 
 @media (min-width: 768px) {
   .homeContainer {
-   
     .myInfoContainer {
       flex-direction: row;
       align-items: center;

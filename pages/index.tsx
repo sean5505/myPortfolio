@@ -27,13 +27,14 @@ export default function Home() {
       </Head>
 
       <section className={style.homeContainer}>
-        <div className={style.initialHookContainer}>
-          <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
-          {!isHookLoaded && (
+      {!isHookLoaded && (
             <button className={style.skipButton} onClick={() => hookControl()}>
               Skip 
             </button> /*need to work on positioning */
           )}
+        <div className={style.initialHookContainer}>
+          <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
+         
         </div>
         {isHookLoaded && (
           <motion.section

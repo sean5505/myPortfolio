@@ -5,14 +5,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
   gap: 0.5em;
-  max-width: 50em;
+
   position: relative;
 
   .backButton {
     position: absolute;
     top: 0;
-    left: 1em;
+    left: 0;
   }
 
   .title {
@@ -45,6 +46,7 @@
 }
 .projectInfo {
   width: 50vw;
+  padding: 0 .5em;
 
   h2 {
     text-decoration: underline;
