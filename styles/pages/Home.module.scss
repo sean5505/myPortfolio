@@ -1,9 +1,3 @@
-.skipButton{
-  position: absolute;
-  right:10%;
-  top: 40%;
-  width:fit-content;
-}
 
 
 .homeContainer {
@@ -14,6 +8,18 @@
   margin-inline: 1em;
   position: relative;
 
+  > div {
+    .skipButton{
+      position: absolute;
+      right:0;
+      top:0;
+      width:fit-content;
+      z-index: 999;
+    }
+  }
+
+  
+  
   
   .myInfoContainer {
     display: flex;
@@ -29,15 +35,16 @@
 
 @media (min-width: 768px) {
   .homeContainer {
+    > div {
+      .skipButton{
+        left: 40%;
+      
+      }
+    }
     .myInfoContainer {
       flex-direction: row;
       align-items: center;
-    }
+    
   }
 }
-
-@media (max-width: 600px) {
-  .homeContainer {
-    margin-top: 2em; // a lil cheessy
-  }
 }

@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { HookContext } from "@/context/HookContext";
 import Hook from "@/components/Hook";
 import Skills from "@/components/Skills";
@@ -25,13 +25,16 @@ export default function Home() {
       <Head>
         <title>stevenG</title>
       </Head>
-      {!isHookLoaded && (
-        <button className={style.skipButton} onClick={hookControl}>
-          Skip
-        </button>
-      )}
+
       <section className={style.homeContainer}>
-        <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
+        <div>
+          <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
+          {!isHookLoaded && (
+            <button className={style.skipButton} onClick={() => hookControl()}>
+              Skip 
+            </button> /*need to work on positioning */
+          )}
+        </div>
         {isHookLoaded && (
           <motion.section
             {...commonProps}
@@ -39,11 +42,7 @@ export default function Home() {
             className={style.myInfoContainer}
           >
             <div>
-              <motion.p
-                {...commonProps}
-                transition={{ duration: 1 }}
-                className={style.applyIndent}
-              >
+              <motion.p {...commonProps} transition={{ duration: 1 }}>
                 Hello, my name is <strong>Steven Gibson</strong>, a React Front
                 End Developer based in NYC. As an avid learner, I constantly
                 stay updated with the latest industry trends. My current focus

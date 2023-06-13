@@ -41,7 +41,7 @@ export default function ProjectWrapper({ id, frontmatter }: Props) {
                   <button>Code</button> {/*gonna want to restyle these later}*/}
                 </a>
                 <Link href={`/projects/${id}`}>
-                  <button>In-Depth Study <FaArrowRight/></button>
+                  <button>In-Depth Study<FaArrowRight/></button>
                 </Link>
               </div>
             </div>

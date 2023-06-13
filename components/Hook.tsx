@@ -2,6 +2,7 @@
 
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import style from "@/styles/components/Hook.module.scss";
 
 type Props = {
   hookControl: CallableFunction;
@@ -10,14 +11,15 @@ type Props = {
 export default function Hook({ hookControl, isHookLoaded }: Props) {
   return (
     <>
-      <div style={{ textAlign: "center" }}>
+      <div>
         {!isHookLoaded ? (
-          <div>
+          <div className={style.hookContainer}>
             <Typewriter
               options={{
                 deleteSpeed: 1,
                 delay: 25,
                 cursor: " ",
+                
               }}
               onInit={(typewriter) => {
                 typewriter
@@ -43,7 +45,7 @@ export default function Hook({ hookControl, isHookLoaded }: Props) {
             />
           </div>
         ) : (
-          <div style={{ textAlign: "start" }}>
+          <div className={style.loadedHook}>
             <motion.h4
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}

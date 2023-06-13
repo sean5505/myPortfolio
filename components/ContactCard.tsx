@@ -32,7 +32,7 @@ export default function ContactCard(props: Props) {
           src={props.contactImgSrc}
           alt={props.methodOfContact}
         />
-        <h2>{props.methodOfContact}</h2>
+        <h2 className={style.contactMethod}>{props.methodOfContact}</h2>
         {props.info && <div>{props.info}</div>}
         <CopyToClipboard text={props.info}>
           <button className={style.cardButton} onClick={handleClick}>

@@ -11,6 +11,8 @@
 
     input {
       border-radius: 20px;
+      text-align: center;
+      
       
     }
     .required::after {
@@ -49,6 +51,9 @@
       textarea {
         min-width: 12em;
         max-width: 12em;
+      }
+      input{
+        width:12em;
       }
     }
   }
