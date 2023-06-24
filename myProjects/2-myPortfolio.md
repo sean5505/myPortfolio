@@ -4,8 +4,8 @@ title: "Portfolio Project"
 description: "An interesting project that allows me to showcase my skills to potential employers."
 
 thumbnail: assets/myPortfolio.png
-siteUrl: "https://sean5505cheapbreakout.netlify.app"
-codeUrl: "https://github.com/sean5505/breakoutUploadTest"
+siteUrl: "https://steveng.vercel.app/"
+codeUrl: "https://github.com/sean5505/myPortfolio"
 technologies:
   - NEXTJS
   - REACT
