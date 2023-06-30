@@ -3,6 +3,9 @@ import React, { useState } from "react";
 
 export default function FeedbackForm() {
   const [result, setResult] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -46,19 +49,25 @@ export default function FeedbackForm() {
               value="New Submission from Web3Forms"
             />
 
-            <label htmlFor="feed-name">
-              Name
-            </label>
+            <label htmlFor="feed-name">Name</label>
             <input
               type="text"
               id="feed-name"
               name="name"
               placeholder="John Doe"
-          
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
 
             <label htmlFor="feed-email">Email</label>
-            <input type="email" id="feed-email" name="email" placeholder="john@doe.com" />
+            <input
+              type="email"
+              id="feed-email"
+              name="email"
+              placeholder="john@doe.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
             <label className={style.required} htmlFor="feed-comments">
               Comments
@@ -69,6 +78,8 @@ export default function FeedbackForm() {
               placeholder="e.g room for improvements"
               minLength={5}
               className={style.required}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
 
