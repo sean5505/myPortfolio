@@ -1,3 +1,37 @@
+<a target="_blank" href="https://steveng.vercel.app/"> <img src="public/assets/moon.png" align="right" height="60" />
+</a>
+# My Portfolio
+
+<p align="center">An interesting project that allows me to showcase my skills to prospective employers.</p>
+
+<p align="center"> <a target="_blank" href="https://steveng.vercel.app/"> Live Demo </a> </p>
+
+---
+## Table Of Contents
+  - [Overview](#overview)
+  - [Development](#development)
+  - [Challenges](#challenges)
+  - [Conclusion](#conclusion)
+---
+
+## Overview
+Utilizing modern techniques, this project was created with the goal of showcasing my skills to prospective employers. It also demonstrates my commitment to staying updated with the latest industry trends and technologies.
+
+![Website Image](public/assets/myPortfolio.png) 
+
+### 
+
+## Development
+
+### **Tech stack**
+
+For this project, I chose to use `React` because it has a vast ecosystem of libraries and a supportive community. It allowed me to create reusable components, which made my development process faster and easier.
+
+I opted to utilize `Next.js` as the build tool. This decision was motivated not only by my desire to explore new technologies but also by the compelling benefits it offers, particularly in terms of server-side rendering capabilities. As I intend to maintain and evolve the project over time, adopting Next.js aligns with the current industry best practices recommended by the official React team.
+
+I employed `TypeScript` instead of regular JavaScript because of TypeScript's strong type system and static checking capabilities, which allowed me to catch errors early on and makes the code more reliable. The decision to leverage Typescript, gave me more confidence in the stability of the project.
+
+For styling, I used `SCSS modules`. Its nested syntax provided a more readable and organized structure for defining styles. This contributed to easier code maintenance and enhanced the overall maintainability of the project.
 <a target="_blank" href="https://steveng.vercel.app/"> <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b50f4eb-4436-4f29-bbcd-8945caa26546/d3txs4f-9c92dff7-c325-4d10-a829-7f36e5213415.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi81YjUwZjRlYi00NDM2LTRmMjktYmJjZC04OTQ1Y2FhMjY1NDYvZDN0eHM0Zi05YzkyZGZmNy1jMzI1LTRkMTAtYTgyOS03ZjM2ZTUyMTM0MTUucG5nIn1dXX0._zCv84zW5ZMXi5dJqayQ8PjLB3m8EegknEhCkLH-XCM" align="right" height="60" />
 </a>
 # My Portfolio
