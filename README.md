@@ -17,7 +17,7 @@
 ## Overview
 Utilizing modern techniques, this project was created with the goal of showcasing my skills to prospective employers. It also demonstrates my commitment to staying updated with the latest industry trends and technologies.
 
-![Website Image](public/assets/myPort.png) 
+![Website Image](public/assets/myPortfolio.png) 
 
 ### 
 
