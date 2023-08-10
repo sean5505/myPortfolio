@@ -1,9 +1,9 @@
-import AboutSection from "@/components/AboutSection";
+import AboutSection from "@/components/AboutSection/AboutSection";
 import siteImg from "@/public/assets/siteImage.png";
 import brain from "@/public/assets/brainExplosion.png";
 import Certificate from "@/public/assets/edu.gif";
-import style from "@/styles/pages/About.module.scss";
-import Skills from "@/components/Skills";
+import style from "./About.module.scss";
+import Skills from "@/components/Skills/Skills";
 import Link from "next/link";
 import Head from "next/head";
 import { FaArrowRight } from "react-icons/fa";
@@ -28,8 +28,8 @@ export default function About() {
         <AboutSection imgSrc={brain}>
           <h2 className={style.sectionHead}>Skills and Experience</h2>
           <p>
-            I&apos;ve been studying Front-End Development in my spare time for
-            about a year now. It started as a hobby, but nowadays I&apos;m focused on
+            I&apos;ve been studying Front-End Development for
+            a year now. It started as a hobby, but nowadays I&apos;m focused on
             turning my ideas into fully functional projects. Feel free to check
             out what I&apos;ve been working on!
             <br />

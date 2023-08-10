@@ -1,0 +1,83 @@
+@import "@/styles/colors.scss";
+
+.projectContainer {
+  border: 2px solid $clr-sec;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  padding: 0 .8em;
+
+  
+  .title {
+    text-decoration: underline;
+  }
+
+  .subTitle {
+    color: $clr-sec;
+    text-decoration: underline;
+  }
+  .leftContainer, .rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .rightContainer {
+    flex-direction: column;
+   
+  }
+
+  .projectImg {
+    max-width: 70%;
+    height: 100%;
+  }
+  .projectDesc {
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .technology {
+      padding: 0.2em 1em;
+      border: 1px solid $clr-sec;
+      border-bottom: none;
+      border-top: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .projectContainer {
+
+    .container {
+      display: flex;
+      flex-direction: row;
+
+      .leftContainer{
+        width:30%;
+      }
+      .rightContainer{
+        width:70%;
+      }
+    }
+    .projectImg {
+      max-width: 100%;
+    }
+    .projectDesc {
+      padding-left: 1em;
+    }
+
+  }
+}

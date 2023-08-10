@@ -1,5 +1,5 @@
 ---
-title: "Cheap Breakout"
+title: "Cheap Breakout v1"
 
 description: "A cheap remake of Atari Breakout, a game with the goal of clearing all blocks without letting the ball hit the horizon. As the ball collides with the blocks, the block vanishes and the user earns points. The speed at which the ball moves can be adjusted by the difficulty setting. As a result, playing at a higher difficulty level allows the user to accumulate additional points."
 

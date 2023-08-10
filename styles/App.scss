@@ -64,6 +64,11 @@ h2{
   color:$clr-sec;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
+
 
 strong {
   background: linear-gradient(45deg, #20002c, #1d2671);

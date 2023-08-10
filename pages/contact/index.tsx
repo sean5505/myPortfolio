@@ -1,7 +1,7 @@
-import ContactCard from "@/components/ContactCard";
+import ContactCard from "@/components/ContactCard/ContactCard";
 import Email from "@/public/assets/Email.jpg";
 import Phone from "@/public/assets/Phone.png";
-import style from "@/styles/pages/Contact.module.scss";
+import style from "./Contact.module.scss";
 import Head from "next/head";
 import { motion } from "framer-motion";
 

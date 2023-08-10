@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { HookContext } from "@/context/HookContext";
-import Hook from "@/components/Hook";
-import Skills from "@/components/Skills";
+import Hook from "@/components/Hook/Hook";
+import Skills from "@/components/Skills/Skills";
 import Link from "next/link";
 import style from "@/styles/pages/Home.module.scss";
 import Head from "next/head";
@@ -27,14 +27,13 @@ export default function Home() {
       </Head>
 
       <section className={style.homeContainer}>
-      {!isHookLoaded && (
-            <button className={style.skipButton} onClick={() => hookControl()}>
-              Skip 
-            </button> /*need to work on positioning */
-          )}
+        {!isHookLoaded && (
+          <button className={style.skipButton} onClick={() => hookControl()}>
+            Skip
+          </button> /*need to work on positioning */
+        )}
         <div className={style.initialHookContainer}>
           <Hook hookControl={hookControl} isHookLoaded={isHookLoaded} />
-         
         </div>
         {isHookLoaded && (
           <motion.section
@@ -46,7 +45,7 @@ export default function Home() {
               <motion.p {...commonProps} transition={{ duration: 1 }}>
                 Hello, my name is <strong>Steven Gibson</strong>, a React Front
                 End Developer based in NYC. As an avid learner, I constantly
-                stay updated with the latest industry trends. My current focus
+                stay updated with  latest industry trends. My current focus
                 is on leveraging the power of React to craft inventive and
                 scalable solutions that enhance user satisfaction. I am deeply
                 committed to the continuous development and expansion of my

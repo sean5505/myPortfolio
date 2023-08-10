@@ -1,7 +1,7 @@
 import Head from "next/head";
 import fs from "fs";
 import matter from "gray-matter";
-import ProjectWrapper from "@/components/ProjectWrapper";
+import ProjectWrapper from "@/components/ProjectWrapper/ProjectWrapper";
 import { ProjectsProps } from "@/lib/types";
 
 export async function getStaticProps() {

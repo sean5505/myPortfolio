@@ -4,9 +4,9 @@ import matter from "gray-matter";
 import { Frontmatter } from "@/lib/types";
 import Head from "next/head";
 import Image from "next/image";
-import style from "@/styles/pages/Projects.module.scss";
+import style from "./Projects.module.scss";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import TableOfContents from "@/components/TableOfContents";
+import TableOfContents from "@/components/TableOfContents/TableOfContents";
 import { FaArrowLeft } from "react-icons/fa";
 
 type Props = {
