@@ -1,7 +1,7 @@
 ---
 title: "BikeSwoon"
 
-description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It empowers users to conveniently add their desired items to a virtual cart, fostering a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease."
+description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses to Login, this form is prefilled with some of their data. "
 
 thumbnail: assets/bikeSwoonIntro.png
 siteUrl: https://sean5505bikeswoon.netlify.app/
@@ -12,6 +12,7 @@ technologies:
   - JAVASCRIPT
   - CSS MODULES
   - REDUX
+  - FIREBASE
 toc:
   - Overview
   - Development
@@ -21,7 +22,7 @@ toc:
 
 ## Overview
 
-A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease.
+A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses to Login, this form is prefilled with some of their data. 
 
 ## Development
 
@@ -35,9 +36,13 @@ According to the assignment specifications, I implemented the application using 
 
 To optimize the development process and achieve faster startup times, I opted for `Vite` as the build tool, leveraging its efficient development server capabilities. 
 
-For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability. 
+For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability across the application. The cart's state is preserved across application reloads by utilizing local storage.
 
 To enhance code maintainability during iterative development and minimize class name conflicts, I employed `module-based CSS files`.
+
+For login authentication, I opted to utilize `Firebase`, taking advantage of serveral features such as createEmailAndPassword and googleSignIn for managing users.
+
+In addition, I took advantage of serveral popular libraries such as `React-Hook-Form` to improve code quality.  
 
 ## Challenges
 

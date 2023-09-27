@@ -13,6 +13,7 @@ export default function Skills() {
       <li>TAILWIND</li>
       <li>REDUX</li>
       <li>ZUSTAND</li>
+      <li>FIREBASE</li>
       <li>FIGMA</li>
       <li>RESPONSIVE DESIGN</li>
       <li>UI/UX</li>

@@ -28,10 +28,10 @@ export default function About() {
         <AboutSection imgSrc={brain}>
           <h2 className={style.sectionHead}>Skills and Experience</h2>
           <p>
-            I&apos;ve been studying Front-End Development for
-            a year now. It started as a hobby, but nowadays I&apos;m focused on
-            turning my ideas into fully functional projects. Feel free to check
-            out what I&apos;ve been working on!
+            I&apos;ve been studying Front-End Development for a year now. It
+            started as a hobby, but nowadays I&apos;m focused on turning my
+            ideas into fully functional projects. Feel free to check out what
+            I&apos;ve been working on!
             <br />
           </p>
           <Link href="/projects">
