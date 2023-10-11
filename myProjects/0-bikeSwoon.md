@@ -13,6 +13,7 @@ technologies:
   - CSS MODULES
   - REDUX
   - FIREBASE
+  - VITEST
 toc:
   - Overview
   - Development
@@ -26,23 +27,27 @@ A user-friendly, interactive web application that serves as a front-end interfac
 
 ## Development
 
-Originally, this project was undertaken as a capstone project within the context of a course in which I was enrolled. The project specifications entailed the creation of a homepage featuring navigation links, as well as a reservation page designed to enable users to input personal information through a form. Upon submission, users would be directed to a booking confirmation page. I created an interactive prototype in Figma to serve as a visual representation of the project requirements. ![Prototype](/assets/bikeSwoonDesign.png)
-
+Originally, this project was undertaken as a capstone project within the context of a course in which I was enrolled. The project specifications entailed the creation of a homepage featuring navigation links, as well as a reservation page designed to enable users to input personal information through a form. Upon submission, users would be directed to a booking confirmation page. I created an interactive prototype in Figma to serve as a visual representation of the project requirements.
+![bikeSwoonDesign](https://github.com/sean5505/testtt/assets/110543268/2a7067ed-dc92-46bb-b940-9844cd34e9c6)
 Following the completion of the initial assignment, I aspired to elevate the project to the status of a comprehensive capstone endeavor, wherein I could fully employ and demonstrate the proficiency acquired throughout my learning experience.
 
 #### **Tech stack**
 
-According to the assignment specifications, I implemented the application using `React`. 
+According to the initial assignment specifications, I implemented the application using `React`. 
+
+Initially, I developed the application using JavaScript. However, I decided to leverage `TypeScript` for its capabilities of compile-time code checking. This allowed me to identify errors in my code in the development process, leading to safer and more efficient code refactoring and ultimately improving project maintainability.
 
 To optimize the development process and achieve faster startup times, I opted for `Vite` as the build tool, leveraging its efficient development server capabilities. 
 
-For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability across the application. The cart's state is preserved across application reloads by utilizing local storage.
+For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability across the application. The cart's state is preserved across application reloads by utilizing local storage. 
 
-To enhance code maintainability during iterative development and minimize class name conflicts, I employed `module-based CSS files`.
+To enhance code maintainability during iterative development and minimize class name conflicts, I employed `Module-Based CSS Files`. 
 
-For login authentication, I opted to utilize `Firebase`, taking advantage of serveral features such as createEmailAndPassword and googleSignIn for managing users.
+For login authentication, I opted to utilize `Firebase`, taking advantage of serveral features such as createEmailAndPassword and googleSignIn for managing users. 
 
-In addition, I took advantage of serveral popular libraries such as `React-Hook-Form` to improve code quality.  
+For testing, I utilized `Vitest`, primairly since I used Vite as the build tool for this project and Vitest is optimized for usage with Vite. I extended the testing utility with `React-Testing-Library` to elevate DOM testing capabilities.
+
+In addition, I took advantage of serveral popular libraries such as `React-Hook-Form` improve code quality for form validation.  
 
 ## Challenges
 
@@ -50,9 +55,19 @@ In addition, I took advantage of serveral popular libraries such as `React-Hook-
 
 This project was originally developed using CRA (Create React App). However, as I stayed updated with the latest trends in the development community, I came to the realization that CRA was no longer the most optimal choice for building a React application. Therefore, I made the decision to adopt Vite as my preferred build tool due to its reputation for being a faster alternative.
 
-While working on this project, I did not fully exploit the extensive capabilities offered by Vite. My primary intention was to leverage a more modern build tool to construct my website. Despite this, the migration process proved to be successful. Nevertheless, I encountered an issue with testing functionality, which is currently not operational.
+While working on this project, I did not fully exploit the extensive capabilities offered by Vite. My primary intention was to leverage a more modern build tool to construct my website. Despite this, the migration process proved to be successful. ~~Nevertheless, I encountered an issue with testing functionality, which is currently not operational.~~
 
-Moving forward, my plan is to implement testing using vitest in the near future, aiming to address this limitation and enhance the overall robustness of the project.
+~~Moving forward, my plan is to implement testing using vitest in the near future, aiming to address this limitation and enhance the overall robustness of the project.~~
+
+#### **Testing**
+
+Following the migration from CRA to Vite, my test files broke down. The primary reason for this was that my original test was made with a combination of Jest and React-Testing-Library, which was not automatically supported in a Vite build environment. My attempts to overcome this challenge led me to becoming stuck in a loop of errors, prompting me to continiously set the task aside in order to concentrate on introducing new features to the application…
+
+One of the more time-consuming errors was, *TypeError: Cannot destructure property 'basename' of 'React__namespace.useContext(...)' as it is null.*
+I spent a somewhat embarrassing amount of time trying to discover what this means as everything in my application worked perfectly fine, and there were no issues with how I supplied context providers to the testing files or the application. Eventually, I managed to overcome this issue by wrapping Browser Router from `react-router-dom` to my testing files in which context exists, somehow preventing the error from occurring. 
+
+Ultimately, Integrating testing into the application has enabled me to streamline the manual testing process before deployment, guaranteeing the effectiveness of the elements being tested. Going forward, I aim to expand my testing suite to improve code coverage.
+
 
 ## Conclusion
 

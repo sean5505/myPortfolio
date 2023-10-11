@@ -15,6 +15,7 @@ export default function Skills() {
       <li>ZUSTAND</li>
       <li>FIREBASE</li>
       <li>FIGMA</li>
+      <li>VITEST</li>
       <li>RESPONSIVE DESIGN</li>
       <li>UI/UX</li>
     </ul>
