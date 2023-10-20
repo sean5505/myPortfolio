@@ -23,6 +23,8 @@ toc:
 Utilizing modern techniques, this project was created with the goal of showcasing my skills to prospective employers. It also demonstrates my commitment to staying updated with the latest industry trends and technologies.
 
 ## Development
+To begin, I created an interactive protoype in Figma to serve as a visual representation of what I wanted to achieve with this project.
+![Portfolio Design](/assets/portfolioDesign.png)
 
 ### **Tech stack**
 

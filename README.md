@@ -23,6 +23,8 @@
 ### 
 
 ## Development
+To begin, I created an interactive protoype in Figma to serve as a visual representation of what I wanted to achieve with this project.
+![Portfolio Design](public/assets/portfolioDesign.png)
 
 ### **Tech stack**
 
@@ -57,3 +59,7 @@ Overall, these choices made my project more efficient, reliable, and organized.
 ## Conclusion
 
 In conclusion, this project served as an excellent opportunity for me to explore and experiment with new techniques and delve deeper into various aspects of front-end development. It allowed me to expand my skill set and gain valuable insights into emerging trends and technologies within the field. Through this project, I was able to broaden my knowledge and enhance my proficiency, equipping me with a solid foundation for tackling more complex front-end challenges in the future.
+
+## TO DO
+- NextJs update?
+- CSS animation for skills display

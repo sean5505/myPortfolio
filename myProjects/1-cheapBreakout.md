@@ -25,7 +25,7 @@ A cheap remake of Atari Breakout, a game with the goal of clearing all blocks wi
 
 ## Development
 
-This project was a remake of my [First Project](https://github.com/sean5505/breakoutUploadTest), which was created with the HTML, CSS, and JavaScript, the fundamentals of web development. However, I wanted to rebuild the project and take advantage of different technologies, thus enhancing my comprehension of concepts such as the advantages React offers over Vanilla Javascript. Futhermore, I intend to progressively improve upon the project and sought to incorporate industry leading technologies to assist me with iterative development . 
+This project was a remake of my [First Project](https://steveng.vercel.app/projects/3-breakout), which was created with the HTML, CSS, and JavaScript, the fundamentals of web development. However, I wanted to rebuild the project and take advantage of different technologies, thus enhancing my comprehension of concepts such as the advantages React offers over Vanilla Javascript. Futhermore, I intend to progressively improve upon the project and sought to incorporate industry leading technologies to assist me with iterative development . 
 
 To begin, I created a basic wireframe using Figma as a reference for the intended design of the product. Throughout the developmental process, this design served as a blueprint for what I wanted the end product to achieve.
  ![breakoutDesign](/assets/breakoutDesign.png)
