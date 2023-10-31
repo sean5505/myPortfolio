@@ -1,7 +1,7 @@
 ---
 title: "BikeSwoon"
 
-description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses to Login, this form is prefilled with some of their data. "
+description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses the Login, this process is simplified at the form is filled with some of their data. Additionally, the user has the option to update, delete their accounts if they choose to Login."
 
 thumbnail: assets/bikeSwoonIntro.png
 siteUrl: https://sean5505bikeswoon.netlify.app/
@@ -23,7 +23,7 @@ toc:
 
 ## Overview
 
-A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses to Login, this form is prefilled with some of their data.
+A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses the login, this process is simplified at the form is filled with some of their data. Additionally, the user has the option to update, delete their accounts if they choose to Login.
 
 ## Development
 
@@ -39,15 +39,15 @@ Initially, I developed the application using JavaScript. However, I decided to l
 
 To optimize the development process and achieve faster startup times, I opted for `Vite` as the build tool, leveraging its efficient development server capabilities.
 
-For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability across the application. The cart's state is preserved across application reloads by utilizing local storage.
+For effective state management in the shopping cart functionality, I utilized `Redux`, ensuring seamless viability across the application. The cart's state is persisted across application reloads by utilizing local storage.
 
 To enhance code maintainability during iterative development and minimize class name conflicts, I employed `Module-Based CSS Files`.
 
-For login authentication, I opted to utilize `Firebase`, taking advantage of serveral features such as createEmailAndPassword and googleSignIn for managing users.
+I opted to utilize `Firebase`, taking advantage of serveral features such as Authentication, Firestore for database managment, and Firebase Cloud Storage, giving the user the option to update their profile image.
 
 For testing, I utilized `Vitest`, primairly since I used Vite as the build tool for this project and Vitest is optimized for usage with Vite. I extended the testing utility with `React-Testing-Library` to elevate DOM testing capabilities.
 
-In addition, I took advantage of serveral popular libraries such as `React-Hook-Form` improve code quality for form validation.
+In addition, I took advantage of serveral popular libraries such as `React-Hook-Form` to improve code quality for form validation.
 
 ## Challenges
 
@@ -64,6 +64,16 @@ Following the migration from CRA to Vite, my test files broke down. The primary 
 One of the more time-consuming errors was, _TypeError: Cannot destructure property 'basename' of 'React\_\_namespace.useContext(...)' as it is null._ My attempts to understand/ resolve this error proved to be unproductive, so I decided the quickest way to get answers was to rely on community support. Although it didn't specifically match what I was looking for, I found answers online that led me to a solution that would fit my needs. This solution involved employing Memory Router from the `react-router-dom` library, enabling me to have full control over the history stack and prevent the variables used within the useContext from becoming null in my test files.
 
 Ultimately, Integrating testing into the application has enabled me to streamline the manual testing process before deployment, guaranteeing the effectiveness of the elements being tested. Going forward, I aim to expand my testing suite to improve code coverage.
+
+#### **Integrating Firebase**
+
+Originally, my decision to integrate Firebase into the application was driven by my desire to add user authentication to the application. However, I soon realized that Firebase had offered broader functionalities and I wanted to take advantage of these features. I leveraged `Firestore` for efficient database management and utilized Firebases Cloud Storage for storing images used within the application. Since I added a FireStore to the application, I would need to fetch data to use it in my application, so I employed `Tanstack Query(ReactQuery)` to handle the data fetching process. 
+
+After doing so, I managed to synchronize the database and give the users the option to update their profiles, maintaining a separate collection to record each individual account creation.
+
+One of the more notable challenges I encountered while working with Firebase involved updating sensitive actions, such as the password or email associated with the account and user account deletions. The documentation offered by firebase made note of this problem, but did not exactly offer comprehensive guidance for overcoming this hurdle. I found a solution online involving firebase’s EmailAuthProvider object, which was absent from the official documentation.
+
+In conclusion, leveraging Firebase’s built-in methods helped to facilitate the integration of CRUD(Create, Read, Update, Delete) operations within the application. In the future, I hope to explore deeper the vast array of features Firebase has to offer.
 
 ## Conclusion
 
