@@ -1,7 +1,7 @@
 ---
 title: "Portfolio Project"
 
-description: "An interesting project that allows me to showcase my skills to potential employers."
+description: "An interesting project that allows me to showcase my skills to potential employers and functions as a central hub for the personal projects I've undertaken."
 
 thumbnail: assets/myPortfolio.png
 siteUrl: "https://steveng.vercel.app/"

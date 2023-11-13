@@ -3,7 +3,7 @@
 
 # My Portfolio
 
-<p align="center">An interesting project that allows me to showcase my skills to prospective employers.</p>
+<p align="center">An interesting project that allows me to showcase my skills to potential employers and functions as a central hub for the personal projects I've undertaken.</p>
 
 <p align="center"> <a target="_blank" href="https://steveng.vercel.app/"> Live Demo </a> </p>
 
@@ -61,5 +61,6 @@ Overall, these choices made my project more efficient, reliable, and organized.
 In conclusion, this project served as an excellent opportunity for me to explore and experiment with new techniques and delve deeper into various aspects of front-end development. It allowed me to expand my skill set and gain valuable insights into emerging trends and technologies within the field. Through this project, I was able to broaden my knowledge and enhance my proficiency, equipping me with a solid foundation for tackling more complex front-end challenges in the future.
 
 ## TO DO
-- NextJs update?
+- NextJS update?
 - CSS animation for skills display
+- Accessibility? 

@@ -43,13 +43,15 @@ export default function Home() {
           >
             <div>
               <motion.p {...commonProps} transition={{ duration: 1 }}>
-                Hello, my name is <strong>Steven Gibson</strong>, a React Front
-                End Developer based in NYC. As an avid learner, I constantly
-                stay updated with latest industry trends. My current focus is on
-                leveraging the power of React to craft inventive and scalable
-                solutions that enhance user satisfaction. I am deeply committed
-                to the continuous development and expansion of my skillset.
+                Hello, my name is <strong>Steven Gibson</strong>, a Front End
+                Developer based in NYC. As an avid learner, I constantly stay
+                updated with latest industry trends. My current focus is on
+                leveraging the power of tools associated with Front End
+                Development to craft inventive and scalable solutions that
+                enhance user satisfaction. I am deeply committed to the
+                continuous development and expansion of my skillset.
               </motion.p>
+             
               <motion.div
                 {...commonProps}
                 transition={{ duration: 1, delay: (incrementalDelay += 0.5) }}

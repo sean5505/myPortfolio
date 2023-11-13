@@ -1,7 +1,7 @@
 ---
 title: "BikeSwoon"
 
-description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses the Login, this process is simplified at the form is filled with some of their data. Additionally, the user has the option to update, delete their accounts if they choose to Login."
+description: "A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses to login, this process is simplified as the form is filled with some of their data. Furthermore, users can access a variety of additional features upon logging in, including the ability to update or delete account information."
 
 thumbnail: assets/bikeSwoonIntro.png
 siteUrl: https://sean5505bikeswoon.netlify.app/
@@ -23,7 +23,7 @@ toc:
 
 ## Overview
 
-A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses the login, this process is simplified at the form is filled with some of their data. Additionally, the user has the option to update, delete their accounts if they choose to Login.
+A user-friendly, interactive web application that serves as a front-end interface for BikeSwoon, enabling customers to effortlessly view a psuedo brocheure. It provides users the ability to conveniently add their desired items to a virtual cart, allowing a seamless ordering experience. Additionally, the application offers the convenience of advance reservation submission, allowing customers to secure their dining plans ahead of time with ease. If the user chooses the login, this process is simplified at the form is filled with some of their data. Furthermore, users can access a variety of additional features upon logging in, including the ability to update or delete account information.
 
 ## Development
 

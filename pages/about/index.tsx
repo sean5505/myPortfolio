@@ -20,18 +20,18 @@ export default function About() {
         <AboutSection imgSrc={siteImg}>
           <h2>Steven Gibson</h2>
           <p>
-            <strong>React</strong> Front-End Developer located in NYC.
-            Currently, my focus is on building React based applications that is
-            visually appealing and provides exeptional user experience.
+            <strong>Front-End Developer</strong> based in NYC. Currently, my
+            focus is on building dynamic applications that are, not only
+            visually appealing, but provides exceptional user experience.
           </p>
         </AboutSection>
         <AboutSection imgSrc={brain}>
           <h2 className={style.sectionHead}>Skills and Experience</h2>
           <p>
-            I&apos;ve been studying Front-End Development for a year now. It
-            started as a hobby, but nowadays I&apos;m focused on turning my
-            ideas into fully functional projects. Feel free to check out what
-            I&apos;ve been working on!
+            I&apos;ve been focusing on the field of Front-End Development for
+            over a year now. It started as a hobby, but nowadays I&apos;m
+            focused on turning my ideas into fully functional projects. Feel
+            free to check out what I&apos;ve been working on!
             <br />
           </p>
           <Link href="/projects">
@@ -43,7 +43,7 @@ export default function About() {
         </AboutSection>
         <AboutSection imgSrc={Certificate}>
           <h2 className={style.sectionHead}>Education</h2>
-          <h3>Meta Front End Development: </h3>
+          <h3><strong>Meta Front End Development</strong></h3>
           <a
             href="/files/META_certificate.pdf"
             target="_blank"
@@ -66,7 +66,9 @@ export default function About() {
               Provided me with valuable insights into the fundamental principles
               of UX design, covering crucial areas such as research,
               prototyping, and testing to create user-centered digital
-              experiences
+              experiences. Through the use of tools such as Figma, I gained
+              hands on experience in translating design concepts into
+              interactive prototypes.
             </li>
           </ul>
         </AboutSection>
