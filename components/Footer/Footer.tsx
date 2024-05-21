@@ -21,7 +21,7 @@ export default function Footer({ toggleModal }: Props) {
         </button>
       </a>
 
-      <button className={style.footerButton} onClick={toggleModal}>
+      <button className={style.footerButton} onClick={() => toggleModal()}>
        Feedback
       </button>
     </footer>

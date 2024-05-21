@@ -35,7 +35,7 @@ export default function ContactCard(props: Props) {
         <h2 className={style.contactMethod}>{props.methodOfContact}</h2>
         {props.info && <div>{props.info}</div>}
         <CopyToClipboard text={props.info}>
-          <button className={style.cardButton} onClick={handleClick}>
+          <button className={style.cardButton} onClick={() => handleClick()}>
             {props.action}
           </button>
         </CopyToClipboard>

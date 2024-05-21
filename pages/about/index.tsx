@@ -43,34 +43,53 @@ export default function About() {
         </AboutSection>
         <AboutSection imgSrc={Certificate}>
           <h2 className={style.sectionHead}>Education</h2>
-          <h3><strong>Meta Front End Development</strong></h3>
-          <a
-            href="/files/META_certificate.pdf"
-            target="_blank"
-            className={style.cert}
-          >
-            Certificate
-          </a>
-          <ul>
-            <li className={style.list}>
-              {" "}
-              {/* ew */}
-              Through the comprehensive course, I gained a strong foundation in
-              the key aspects of web development, including HTML, CSS, and
-              JavaScript. Additionally, I extended my knowledge by learning
-              React, a popular JavaScript library for building dynamic user
-              interfaces.
-            </li>
-            <br />
-            <li className={style.list}>
-              Provided me with valuable insights into the fundamental principles
-              of UX design, covering crucial areas such as research,
-              prototyping, and testing to create user-centered digital
-              experiences. Through the use of tools such as Figma, I gained
-              hands on experience in translating design concepts into
-              interactive prototypes.
-            </li>
-          </ul>
+          <div>
+            <h3>
+              <a href="/files/META_certificate.pdf" target="_blank">
+                Meta Front End Development
+              </a>
+            </h3>
+            <ul>
+              <li className={style.list}>
+                {" "}
+                {/* ew */}
+                Through the comprehensive course, I gained a strong foundation
+                in the key aspects of web development, including HTML, CSS, and
+                JavaScript. Additionally, I extended my knowledge by learning
+                React, a popular JavaScript library for building dynamic user
+                interfaces.
+              </li>
+              <br />
+              <li className={style.list}>
+                Provided me with valuable insights into the fundamental
+                principles of UX design, covering crucial areas such as
+                research, prototyping, and testing to create user-centered
+                digital experiences. Through the use of tools such as Figma, I
+                gained hands on experience in translating design concepts into
+                interactive prototypes.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>
+              <a href="/files/GoogleDataAnalytics.pdf" target="_blank">
+                Google Data Analytics
+              </a>
+            </h3>
+            <ul>
+              <li className={style.list}>
+                {" "}
+                {/* ew */}
+                Online course offered by Google introduced me to the field of
+                Data Analytics. From the course, I gained a comprehensive
+                understanding of data analysis techniques, learned to use tools
+                like Spreadsheets, SQL, and Tableau, and developed the skills to gather,
+                clean, and visualize data effectively. This foundational
+                knowledge has equipped me to make data-driven decisions and
+                pursue further learning in the field of analytics.
+              </li>
+            </ul>
+          </div>
         </AboutSection>
         <AboutSection>
           <h2 className={style.sectionHead}>Get in Touch</h2>

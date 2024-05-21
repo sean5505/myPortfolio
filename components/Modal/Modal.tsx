@@ -12,10 +12,10 @@ export default function Modal({ modal, toggleModal, children }: Props) {
     <>
       {modal && (
         <div className={style.modal}>
-          <div onClick={toggleModal} className={style.overlay}></div>
+          <div onClick={() => toggleModal()} className={style.overlay}></div>
           <div className={style.modalContent}>
             {children}
-            <button className={style.closeModal} onClick={toggleModal}>
+            <button className={style.closeModal} onClick={() => toggleModal()}>
               CLOSE
             </button>
           </div>

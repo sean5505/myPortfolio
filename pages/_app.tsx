@@ -1,13 +1,13 @@
 import "@/styles/App.scss";
 import { HookContext } from "@/context/HookContext";
-import {useState} from 'react'
+import { useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppProps } from "next/app";
 import Layout from "@/components/Layout/Layout";
 
 function App({ Component, pageProps }: AppProps) {
-  const [isHookLoaded, setIsHookLoaded] = useState(false)
+  const [isHookLoaded, setIsHookLoaded] = useState(false);
   return (
     <>
       <ToastContainer
@@ -22,13 +22,11 @@ function App({ Component, pageProps }: AppProps) {
         pauseOnHover={false}
         theme="dark"
       />
-      <div>
-        <HookContext.Provider value = {{isHookLoaded, setIsHookLoaded}}>
+      <HookContext.Provider value={{ isHookLoaded, setIsHookLoaded }}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
-        </HookContext.Provider>
-      </div>
+      </HookContext.Provider>
     </>
   );
 }
