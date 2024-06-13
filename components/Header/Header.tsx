@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.headerLogo}>
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} title="Home Page">
           &lt;/stevenG&gt;
         </Link>
       </div>
@@ -36,6 +36,7 @@ export default function Header() {
             <li key={link.title}>
               <Link
                 href={link.path}
+                title={link.title}
                 passHref
                 onClick={() => showNavBar()}
                 className={

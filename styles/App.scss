@@ -5,7 +5,6 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-
 body {
   background-image: $clr-bg;
   background-repeat: no-repeat;
@@ -19,7 +18,7 @@ body {
   justify-content: center;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +33,7 @@ button {
   background-color: teal;
   border-radius: 30px;
   cursor: pointer;
-  padding: .5rem;
+  padding: 0.5rem;
   text-transform: uppercase;
 
   &:hover {
@@ -47,7 +46,6 @@ button {
 p {
   font-size: 1.2rem;
   text-indent: 1em;
-
 }
 
 a {
@@ -58,15 +56,14 @@ a {
   }
 }
 
-h2{
-  color:$clr-sec;
+h2 {
+  color: $clr-sec;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
 }
-
 
 strong {
   background: linear-gradient(45deg, #20002c, #1d2671);
@@ -75,27 +72,30 @@ strong {
   font-size: 1.4em;
 }
 
-::-webkit-scrollbar{
-  width: .6rem;
-
+dialog {
+  width: 12em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 1);
 }
-::-webkit-scrollbar:hover{
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar:hover {
   cursor: pointer;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: $clr-main;
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: grey;
   border-radius: 5px;
 }
 
-@media (max-width:400px) {
-  main{
+@media (max-width: 400px) {
+  main {
     min-height: 75vh;
     max-height: 75vh;
   }
-  
 }

@@ -1,0 +1,26 @@
+@import "@/styles/colors.scss";
+
+.overlay { /*would be better to use ::backdrop but i cant figure it out yet*/
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  .container {
+    background-color: $clr-tri;
+    .modalHead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid black;
+      margin-bottom: 1rem;
+
+      .closeButton{
+        border-radius: 1em;
+
+      }
+    }
+  }
+}
